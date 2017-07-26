@@ -10,7 +10,7 @@ url="https://github.com/ivansib/sibcoin/releases/download"
 tag="v0.16.1.1"
 
 #
-log_title ">>> TEST ${root_dir}"
+echo ">>> TEST ${root_dir}"
 
 if [ "${platform}" == "linux" ]; then
     if [ "${arch}" == "x86_64" ]; then
