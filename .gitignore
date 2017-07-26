@@ -30,4 +30,12 @@ regtest/data/node3/regtest
 
 # dev
 .idea
-bin/*
+bin/sibcoin-*
+bin/bitcoind
+bin/sibcoind
+bin/*.gz
+bin/*.asc
+__*
+
+
+

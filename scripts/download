@@ -51,7 +51,9 @@ download_bitcoind() {
             echo "Unpacking bitcoin distribution"
             tar -xvzf $tarball_name
             if test $? -eq 0; then
-                ln -sf "sibcoin-${version}/bin/bitcoind"
+                # sib: create aliases
+                ln -sfr "./sibcoin-${version}/bin/sibcoind" "./bitcoind"
+                ln -sfr "./sibcoin-${version}/bin/sibcoind"
                 return;
             fi
         fi
