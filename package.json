@@ -4,10 +4,10 @@
   "author": "BitPay <dev@bitpay.com>",
   "version": "3.1.3",
   "main": "./index.js",
-  "repository": "git://github.com/bitpay/bitcore-node.git",
-  "homepage": "https://github.com/bitpay/bitcore-node",
+  "repository": "git://github.com/Werdffelynir/bitcore-node.git",
+  "homepage": "https://github.com/Werdffelynir/bitcore-node",
   "bugs": {
-    "url": "https://github.com/bitpay/bitcore-node/issues"
+    "url": "https://github.com/Werdffelynir/bitcore-node/issues"
   },
   "contributors": [
     {
@@ -31,7 +31,7 @@
     "bitcoind": "./bin/bitcoind"
   },
   "scripts": {
-    "preinstall": "./scripts/download",
+    "postinstall": "./scripts/download",
     "verify": "./scripts/download --skip-bitcoin-download --verify-bitcoin-download",
     "test": "mocha -R spec --recursive",
     "regtest": "./scripts/regtest",
