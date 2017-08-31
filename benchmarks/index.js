@@ -50,10 +50,11 @@ bitcoind.on('ready', function() {
 
   console.log('Bitcoin Core ready');
 
+  // sibcoin: configuration. Default: {host: 'localhost', port: 18332, user: 'bitcoin', pass: 'local321'}
   var client = new bitcoin.Client({
     host: 'localhost',
-    port: 18332,
-    user: 'bitcoin',
+    port: 11944,
+    user: 'sibcoin',
     pass: 'local321'
   });
 
